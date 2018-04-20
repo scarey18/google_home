@@ -1,0 +1,1 @@
+Recreate the Google home search page using HTML and CSS. This is an assignment for The Odin Project.

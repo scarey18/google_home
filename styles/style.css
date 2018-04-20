@@ -1,0 +1,68 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	font-family: arial, sans-serif;
+	font-size: small;
+	background: #fff;
+	color: #222;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.content {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 10px 40px auto 240px auto 40px;
+}
+.navbar {
+grid-row: 2;
+display: grid;
+grid-template-columns: 10px 110px auto 240px 20px;
+}
+.navleft {
+	grid-column: 2;
+	height: 40px;
+	display: flex;
+}
+.navleft a {
+	opacity: 0.75;
+	margin: auto;
+}
+.navright {
+	grid-column: 4;
+	height: 40px;
+	display: flex;
+}
+.navright a {
+	opacity: 0.85;
+	margin: auto;
+}
+.navright a .apps {
+	height: 16px;
+}
+.navright .sign-in {
+	box-sizing: border-box;
+	width: 70px;
+	height: 30px;
+	border: 1px solid #4285f4;
+	border-radius: 2px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #4387fd;
+	text-align: center;
+	line-height: 28px;
+}
+.middle {
+	grid-row: 4;
+}
+.footer {
+	grid-row: 6;
+}
