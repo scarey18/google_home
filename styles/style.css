@@ -20,7 +20,7 @@ a {
 	height: 100%;
 	width: 100%;
 	display: grid;
-	grid-template-rows: 10px 40px auto 240px auto 40px;
+	grid-template-rows: 10px 40px 150px 230px auto 40px;
 }
 .navbar {
 grid-row: 2;
@@ -50,19 +50,88 @@ grid-template-columns: 10px 110px auto 240px 20px;
 }
 .navright .sign-in {
 	box-sizing: border-box;
-	width: 70px;
+	width: 68px;
 	height: 30px;
 	border: 1px solid #4285f4;
 	border-radius: 2px;
 	font-weight: bold;
 	color: #fff;
+	opacity: 1;
 	background-color: #4387fd;
 	text-align: center;
 	line-height: 28px;
 }
 .middle {
 	grid-row: 4;
+	display: grid;
+	grid-template-rows: 120px 44px auto;
+	justify-items: center;
+}
+.logo {
+	grid-row: 1;
+	width: 272px;
+}
+.search-bar {
+	grid-row: 2;
+	width: 584px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    display: flex;
+}
+.search-bar .search {
+	width: 83%;
+	height: 34px;
+	border: none;
+	margin: auto;
+	font: 16px Arial, sans-serif;
+}
+.search-bar .search:focus {
+	outline: none;
+}
+.search-bar .mic {
+	height: 23px;
+	margin: auto;
+}
+.buttons {
+	grid-row: 3;
+	width: 584px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.buttons input {
+	display: inline;
+	height: 36px;
+	line-height: 27px;
+	padding: 0 16px;
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+	margin: 0px 4px;
+	background-color: #f2f2f2;
+	color: #757575;
+	font-weight: bold;
 }
 .footer {
 	grid-row: 6;
+	background: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+	font-size: 10pt;
+	display: flex;
+	align-items: center;
+}
+.footer div {
+	width: 50%;
+}
+.footer a {
+	display: inline-block;
+	color: #666;
+}
+.footer-left a {
+	padding-left: 27px;
+}
+.footer-right {
+	display: flex;
+	justify-content: flex-end;
+}
+.footer-right a {
+	padding-right: 27px;
 }
